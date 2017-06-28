@@ -1,6 +1,6 @@
 <?php
 $text= $_POST["text"];
-$p = preg_split ('/[^A-Za-z0-9À-ßà-ÿ]/', $text);
+$p = preg_split ('/[^A-Za-z0-9Ð-Ð¯Ð°-Ñ]/', $text);
 $array = array_filter($p, function($element) {
     return !empty($element);
 });
